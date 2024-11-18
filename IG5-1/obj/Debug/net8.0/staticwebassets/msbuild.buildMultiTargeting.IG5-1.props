@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\IG5-1.props" />
+</Project>

@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Suivi";
+}
+
+<h1>Les 10 numéros suivants le numéro @ViewData["Id"] sont :</h1>
+<ul>
+    @foreach (var i in (double[])ViewBag.Suivis)
+    {
+        <li>@i</li>
+    }
+</ul>

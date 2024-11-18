@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Equation";
+}
+
+<h1>Résolution de l'équation : @ViewData["A"]x² + @ViewData["B"]x + @ViewData["C"] = 0</h1>
+@if (int.Parse(@ViewData["Delta"].ToString()) < 0)
+{
+   <p> Pas de solutions</p>
+}
+else if (int.Parse(@ViewData["Delta"].ToString()) == 0)
+{
+    <p>x= @ViewBag.X</p>
+}
+else
+{
+    <p>x1= @ViewBag.X1</p><br/>
+    <p>x2= @ViewBag.X2</p>
+}
